@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Nigeria — Explore Abuja</title>
+        <link rel="stylesheet" href="styles/place.css" />
+        <title>Temple Album</title>
+        <meta name="description" content="ojochogwu faith David WDD131 Dynamic web fundamentals, temples album">
+        <meta name="author" content="ojochogwu faith david">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-title-wrap">
+                <h1 class="site-title">Nigeria — Abuja</h1>
+            </div>
+            <div class="green-divider" aria-hidden="true"></div>
+        </header>
+
+        <main class="page-main">
+    <!-- HERO SECTION -->
+            <section class="hero">
+                <picture>
+                    <img src="images/nigeria2.png" alt="Nigeria">
+                </picture>
+
+      <!-- LEFT floating info -->
+                <aside class="card card-left" aria-labelledby="data-title">
+                    <h2 id="data-title" class="card-title">Data</h2>
+                    <ul class="data-list">
+                    <li><strong>Country:</strong> Nigeria</li>
+                    <li><strong>City:</strong> Abuja</li>
+                    <li><strong>Population:</strong> ~3.6M (FCT metro)</li>
+                    <li><strong>Language(s):</strong> English, Hausa, Yoruba, Igbo, etc</li>
+                    <li><strong>Currency:</strong> NGN (Naira)</li>
+                    </ul>
+                </aside>
+
+      <!-- RIGHT floating weather -->
+                <aside class="card card-right" aria-labelledby="weather-title">
+                    <h2 id="weather-title" class="card-title weather-heading">Weather</h2>
+
+                    <!-- Mobile svg icon placed in markup for accessibility + easy control -->
+                    <div class="mobile-icon" aria-hidden="true">
+                    <!-- simple inline SVG cloud + sun (replace if you prefer another) -->
+                    <svg width="56" height="56" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="partly cloudy icon">
+                        <title>Partly Cloudy</title>
+                        <g fill="none" stroke="none" stroke-width="0">
+                        <circle cx="18" cy="18" r="6" fill="#FFD971"></circle>
+                        <path d="M46 34c-0.3-4-3.9-7-8-7-1.2 0-2.4 0.2-3.4 0.6C31.9 21.3 25 19 19.5 22.6 14.1 25.9 11 32.4 12.5 38.4 4.9 40.1 0 46 0 52h44c4 0 7-3 7-7s-3-11-5-11z" fill="#d9e2ec"></path>
+                        <path d="M36 26c3.8 0 7 3.1 7 7 0 3.9-3.2 7-7 7H6" fill="#ffffff" opacity="0.6"></path>
+                        </g>
+                    </svg>
+                    </div>
+
+                    <div class="weather-info">
+                    <p>Temperature: <strong id="temp-value">--</strong> °C</p>
+                    <p>Wind Speed: <strong id="wind-value">--</strong> km/h</p>
+                    <p>Wind Chill: <strong id="windchill-value">--</strong></p>
+                    <p id="weather-desc">Condition: --</p>
+                    </div>
+                </aside>
+                </section>
+
+    <!-- ABOUT / CONTENT -->
+                <section class="content">
+                <h2>About Abuja</h2>
+                <p>
+                    Abuja is the planned capital of Nigeria located near the center of the country.
+                    It is known for Zuma Rock and rolling landscapes — a calm contrast to the coast.
+                </p>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <p>&copy; <span id="current-year">2025</span></p>
+                <p>Last modified: <span id="last-modified">—</span></p>
+            </footer>
+    </body>
+</html>
