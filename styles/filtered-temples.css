@@ -33,13 +33,14 @@ header {
 
 /* NAVIGATION */
 nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
 
 nav a {
+    display:flex;
     color: white;
     text-decoration: none;
     padding: 5px;
