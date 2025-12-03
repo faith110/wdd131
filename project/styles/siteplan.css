@@ -11,8 +11,20 @@ h1, h2 {
 }
 .color-sample {
     width: 80px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    border-radius: 4px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+/* Individual colors */
+.color-sample.purple {
+    background: #4A148C;
+}
+
+.color-sample.teal {
+    background: #009688;
+}
+
+.color-sample.lavender {
+    background: #EDE7F6;
 }
