@@ -1,0 +1,61 @@
+:root{
+  --purple:#4A148C;
+  --teal:#009688;
+  --lavender:#EDE7F6;
+  --body-bg:#ffffff;
+  --max-width:1100px;
+  --radius:12px;
+  --gap:1rem;
+  --font: "Poppins", system-ui, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:var(--font);
+  line-height:1.5;
+  margin:0;
+  background:var(--body-bg);
+  color:#111;
+}
+
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.site-header{background:var(--lavender);border-bottom:1px solid rgba(0,0,0,.05)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-weight:600;color:var(--purple);text-decoration:none;font-size:1.25rem}
+
+.nav-list{list-style:none;padding:0;margin:0;display:flex;gap:.75rem}
+.nav-list a{display:inline-block;text-decoration:none;padding:.45rem .6rem;border-radius:8px}
+.nav-list a[aria-current="page"]{background:var(--purple);color:white}
+
+.btn{
+  display:inline-block;padding:.6rem .9rem;border-radius:10px;background:var(--teal);
+  color:#fff;text-decoration:none;border:none;font-weight:500;cursor:pointer;
+}
+
+.hero{display:grid;gap:1rem;padding:1.5rem 0;align-items:center}
+.hero-inner{z-index:2}
+.hero img{width:100%;border-radius:var(--radius);max-height:420px;object-fit:cover}
+
+/* Quick cards / lists */
+.card-list{list-style:none;padding:0;margin:0;display:grid;gap:1rem}
+.card-list li{padding:1rem;border:1px solid rgba(0,0,0,.06);border-radius:10px;background:#fff}
+
+/* Forms */
+form{margin-top:.75rem;display:grid;gap:.6rem}
+.form-row{display:flex;flex-direction:column;gap:.25rem}
+input,select,textarea{padding:.5rem;border-radius:8px;border:1px solid #ddd;font-size:1rem}
+
+/* Footer */
+.site-footer{padding:1rem 0;background:#fafafa;border-top:1px solid rgba(0,0,0,.03);margin-top:2rem;text-align:center}
+
+/* Responsive: desktop */
+@media(min-width:800px){
+  .hero{grid-template-columns:1fr 1fr;align-items:center}
+  .hero img{order:2}
+  .nav-list{gap:1rem}
+}
+
+/* Ensure focus styles for accessibility */
+a:focus,a:active,input:focus,button:focus{outline:3px solid rgba(0,150,136,.15);outline-offset:3px}
